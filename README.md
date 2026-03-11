@@ -1,6 +1,6 @@
 # ELDEN RING multi-theme browser startpage
 
-[Live Preview](https://pav-osmolski.github.io/startpage/)
+[Live Preview](https://69b135be40b051a8ab4ea2c0--resilient-faloodeh-0ef2ff.netlify.app/)
 
 Please feel free to fork and make your own changes!
 
@@ -47,13 +47,23 @@ Privacy blur/unblur on hover `<ul class="blur">`
 
 ![privacy blur](screenshots/pav-startpage-privacy.png)
 
-## How to install:
+## Development
 
-1. Clone this repo to a location on your hard disk, e.g. `C:/StartPages/`
-2. Set your browser homepage to `file:///C:/StartPages/startpage/index.html`
-3. Run `npm install` in the repo's location to install dev dependencies
-4. Customise to your delight
-5. Run `npm run build` to compile any changed SCSS or JavaScript
+1. Clone the repo and install dependencies:
+   ```bash
+   npm install
+   ```
+2. Open `index.html` directly in your browser (no server needed — it's a static file)
+3. Run the SCSS watcher so styles recompile on save:
+   ```bash
+   npm run watch
+   ```
+4. When done, run a full build to minify JS and CSS before committing:
+   ```bash
+   npm run build
+   ```
+
+> Edit source files in `assets/scss/` and `assets/js/` — never edit `dist/` directly.
 
 ## Currently implemented theme classes:
 
